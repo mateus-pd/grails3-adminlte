@@ -1,5 +1,6 @@
 package storemanager
 
+import com.mbhosts.entity.Client
 import grails.testing.gorm.DomainUnitTest
 import spock.lang.Specification
 

@@ -10,9 +10,9 @@ grails:
             events: false
 info:
     app:
-        name: 'StoreManager'
-        version: '0.0.1a'
-        grailsVersion: '3.3.3'
+        name: '@info.app.name@'
+        version: '@info.app.version@'
+        grailsVersion: '@info.app.grailsVersion@'
 spring:
     main:
         banner-mode: "off"
