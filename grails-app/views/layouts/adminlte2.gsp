@@ -49,14 +49,16 @@
 
     <!-- Footer -->
     <g:render template="layouts/footer"/>
+    <!-- Control Sidebar -->
+    <g:render template="layouts/controlSidebar"/>
 
     <!-- Scripts JS -->
-    <!-- Personal Stylesheet -->
-    <asset:javascript src="application.js"/>
     <!-- jQuery 3 -->
     <asset:javascript src="layout/jquery/jquery.min.js"/>
     <!-- jQuery UI 1.11.4 -->
     <asset:javascript src="layout/jquery-ui/jquery-ui.min.js"/>
+    <!-- Personal Stylesheet -->
+    <asset:javascript src="application.js"/>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>$.widget.bridge('uibutton', $.ui.button);</script>
     <!-- Bootstrap 3.3.7 -->
