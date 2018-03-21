@@ -1,0 +1,1 @@
+<g:include view="${propertyName}/edit.gsp" model="[isSave: isSave]"/>
