@@ -40,7 +40,6 @@
     <g:render template="layouts/topNavigation"/>
     <g:render template="layouts/menu"/>
 
-
     <!-- Content Wrapper -->
     <div class="content-wrapper">
         <g:layoutBody/>
