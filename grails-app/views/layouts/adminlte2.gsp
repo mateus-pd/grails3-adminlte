@@ -37,8 +37,8 @@
 <body class="hold-transition skin-blue sidebar-mini">
 <!-- Wrapper -->
 <div class="wrapper">
-    <g:render template="layouts/topNavigation"/>
-    <g:render template="layouts/menu"/>
+    <g:render template="/layouts/topNavigation"/>
+    <g:render template="/layouts/menu"/>
 
     <!-- Content Wrapper -->
     <div class="content-wrapper">
@@ -47,9 +47,9 @@
     <!-- ./Content Wrapper -->
 
     <!-- Footer -->
-    <g:render template="layouts/footer"/>
+    <g:render template="/layouts/footer"/>
     <!-- Control Sidebar -->
-    <g:render template="layouts/controlSidebar"/>
+    <g:render template="/layouts/controlSidebar"/>
 
     <!-- Scripts JS -->
     <!-- jQuery 3 -->
