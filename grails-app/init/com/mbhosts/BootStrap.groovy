@@ -1,5 +1,7 @@
 package com.mbhosts
 
+import com.mbhosts.db.DataImport
+import grails.util.Holders
 import org.springframework.beans.factory.annotation.Value
 
 class BootStrap {
@@ -8,10 +10,15 @@ class BootStrap {
     String appVersion
 
     def init = { servletContext ->
-        println "===================================================="
-        println "StoreManager Version: $appVersion"
+        def dbCreate = Holders.getGrailsApplication().config.dataSource.dbCreate
+
+        println "==================================================="
+        println "StoreManager -> Version: $appVersion | dbCreate: [$dbCreate]"
+        println "==================================================="
+
+        DataImport.initialCharge()
     }
 
-    def destroy = {
-    }
+    def destroy = {  }
+
 }

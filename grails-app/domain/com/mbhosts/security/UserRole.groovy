@@ -15,6 +15,23 @@ class UserRole implements Serializable {
 	User user
 	Role role
 
+	static constraints = {
+		user nullable: false
+		role nullable: false, validator: { Role r, UserRole ur ->
+			if (ur.user?.id) {
+				if (UserRole.exists(ur.user.id, r.id)) {
+					return ['userRole.exists']
+				}
+			}
+		}
+	}
+
+	static mapping = {
+		table 'security_user_role'
+		id composite: ['user', 'role']
+		version false
+	}
+
 	@Override
 	boolean equals(other) {
 		if (other instanceof UserRole) {
@@ -69,20 +86,4 @@ class UserRole implements Serializable {
 		r == null ? 0 : UserRole.where { role == r }.deleteAll() as int
 	}
 
-	static constraints = {
-	    user nullable: false
-		role nullable: false, validator: { Role r, UserRole ur ->
-			if (ur.user?.id) {
-				if (UserRole.exists(ur.user.id, r.id)) {
-				    return ['userRole.exists']
-				}
-			}
-		}
-	}
-
-	static mapping = {
-		table 'security_user_role'
-		id composite: ['user', 'role']
-		version false
-	}
 }
