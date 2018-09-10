@@ -10,7 +10,7 @@ buildscript {
     }
 }
 
-version "0.0.3a"
+version "0.0.4a"
 group "storemanager"
 
 apply plugin:"eclipse"
