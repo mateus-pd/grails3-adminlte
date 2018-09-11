@@ -2,6 +2,8 @@
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.mbhosts.security.User'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.mbhosts.security.UserRole'
 grails.plugin.springsecurity.authority.className = 'com.mbhosts.security.Role'
+grails.plugin.springsecurity.successHandler.alwaysUseDefault = true
+grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/home'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	[pattern: '/',               access: ['isAuthenticated()']],
 	[pattern: '/home/**', 		 access: ['isAuthenticated()']],
