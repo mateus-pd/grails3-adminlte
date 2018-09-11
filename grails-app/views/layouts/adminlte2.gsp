@@ -37,20 +37,6 @@
 <body class="hold-transition skin-blue sidebar-mini">
 <!-- Wrapper -->
 <div class="wrapper">
-    <g:render template="/layouts/topNavigation"/>
-    <g:render template="/layouts/menu"/>
-
-    <!-- Content Wrapper -->
-    <div class="content-wrapper">
-        <g:layoutBody/>
-    </div>
-    <!-- ./Content Wrapper -->
-
-    <!-- Footer -->
-    <g:render template="/layouts/footer"/>
-    <!-- Control Sidebar -->
-    <g:render template="/layouts/controlSidebar"/>
-
     <!-- Scripts JS -->
     <!-- jQuery 3 -->
     <asset:javascript src="layout/jquery/jquery.min.js"/>
@@ -83,6 +69,20 @@
     <asset:javascript src="layout/fastclick/fastclick.js"/>
     <!-- AdminLTE App -->
     <asset:javascript src="adminlte.min.js"/>
+
+    <g:render template="/layouts/topNavigation"/>
+    <g:render template="/layouts/menu"/>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+        <g:layoutBody/>
+    </div>
+    <!-- ./Content Wrapper -->
+
+    <!-- Footer -->
+    <g:render template="/layouts/footer"/>
+    <!-- Control Sidebar -->
+    <g:render template="/layouts/controlSidebar"/>
 </div>
 <!-- ./Wrapper -->
 </body>
