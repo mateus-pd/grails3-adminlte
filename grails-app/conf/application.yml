@@ -8,6 +8,11 @@ grails:
             # Whether to translate GORM events into Reactor events
             # Disabled by default for performance reasons
             events: false
+    databinding:
+            dateFormats:
+              - "dd/MM/yyyy HH:mm"
+              - "dd/MM/yyyy"
+              - "dd/MM/yyyy HH:mm:ss"
 info:
     app:
         name: '@info.app.name@'

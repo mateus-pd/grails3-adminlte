@@ -26,7 +26,6 @@ repositories {
 }
 
 dependencies {
-
     compile "org.springframework.boot:spring-boot-starter-logging"
     compile "org.springframework.boot:spring-boot-autoconfigure"
     compile "org.grails:grails-core"
@@ -61,7 +60,7 @@ dependencies {
     testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
     // Added Dependencies
     //Driver MySQL
-    runtime 'mysql:mysql-connector-java:5.1.46'
+    runtime 'mysql:mysql-connector-java:5.1.47'
     //Spring Boot Security
     compile 'org.grails.plugins:spring-security-core:3.2.1'
 }
